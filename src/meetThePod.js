@@ -2,8 +2,8 @@ import './App.css';
 
 function MeetThePod() {
   return (
-    <div>
-      meet the pod!
+    <div id="meet">
+      <h1>Meet the Pod</h1>
     </div>
   );
 }

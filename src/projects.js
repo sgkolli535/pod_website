@@ -2,8 +2,8 @@ import './App.css';
 
 function Projects() {
   return (
-    <div>
-      projects
+    <div id="projects">
+      <h1>Projects</h1>
     </div>
   );
 }

@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+	background-color: black;
+	font-family: 'Ruda', sans-serif;
+}
+#wrapper {
+	/* background-image: url("s.jpeg"); */
+	height: 350vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#link1 img {
+	width: 80px;
+	height: 40px;
+}
+nav {
+	font-family: 'Ruda', sans-serif;
+	font-size: 30px;
+}
+.nav-link {
+	margin-right: 120px;
+	margin-left: 120px;
+}
+#home {
+	color: black;
+	font-family: 'Ruda', sans-serif;
+	font-size: 300px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#home img {
+	margin-top: 100px;
+	margin-bottom: 30px;
+	width: 30%;
+	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#meet {
+	height: 700px;
+	font-family: 'Ruda', sans-serif;
+	text-align: center;
+	background-color: white;
+	padding-top: 30px;
+	color: #1A46E3;
+}
+#projects {
+	margin-top: 250px;
+	height: 700px;
+	font-family: 'Ruda', sans-serif;
+	text-align: center;
+	background-color: white;
+	padding-top: 30px;
+	color: #1A46E3;
+}
+.clearfloat {
+	clear: both;
+}
