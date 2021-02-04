@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { default as Home } from './home'
+import { default as MeetThePod } from './meetThePod'
+import { default as Projects } from './projects'
 
 function App() {
   return (
@@ -18,8 +21,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <Home />
+      <MeetThePod />
+      <Projects />
     </div>
   );
 }
 
 export default App;
+
