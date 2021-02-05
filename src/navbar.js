@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div id="navbar">
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark" style={{ backgroundColor: '#1A46E3' }}>
-        <a className="navbar-brand" id="link1" href="#wrapper"><img src="mlh-logo-black.png" alt="logo" /></a>
+        <a className="navbar-brand" id="link1" href="#wrapper"><img src="mlhLogoBlack.png" alt="logo" /></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
