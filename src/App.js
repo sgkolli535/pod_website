@@ -1,22 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import { default as Home } from './home'
-import { default as MeetThePod } from './meetThePod'
-import { default as Projects } from './projects'
-import { default as Navbar } from './navbar'
+import styles from './App.module.css';
+import { default as Home } from './components/Home/Home';
+import { default as MeetThePod } from './components/Pod/Pod';
+import { default as Projects } from './components/Projects/Projects';
+import { default as Nvbar } from './components/Nvbar/Nvbar';
+import { default as Footer } from './components/Footer/Footer';
+import {default as ContactForm} from './components/Contacts/Contacts';
+import {Container} from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <div id='wrapper'>
-        <Navbar />
-        <Home />
-        <MeetThePod />
-        <Projects />
-
-      </div>
-
-    </div>
+    <>
+      <Nvbar />
+      <Container fluid>
+          <Home />
+          <MeetThePod />
+          <Projects />
+          <div className={styles.f_center}>
+            <ContactForm />
+          </div>
+          <Footer />
+      </Container>
+    </>
   );
 }
 

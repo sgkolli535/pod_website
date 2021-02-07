@@ -1,0 +1,21 @@
+.f_col{
+  display: flex;
+  background-color: #D0D0D0;
+  opacity: 0.8;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav_set {
+	font-family: 'Ruda', sans-serif;
+	font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.nav_ele {
+  margin: 0 5rem;
+}
