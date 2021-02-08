@@ -1,10 +1,11 @@
 .frm{
   width: 60%;
   margin: 10rem auto;
+  /* margin-top: 3rem; */
 }
 
 .head{
-  padding-top: 5rem;
+  padding-top: 3rem;
 	font-family: 'Ruda', sans-serif;
 	text-align: center;
 	color: #1A46E3;

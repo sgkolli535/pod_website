@@ -7,23 +7,56 @@ import { default as Footer } from './components/Footer/Footer';
 import { default as ContactForm } from './components/Contacts/Contacts';
 import { default as Gallary } from './components/Gallery/Gallery';
 import { Container } from 'react-bootstrap';
+import React from 'react';
 
-function App() {
-  return (
-    <>
-      <Nvbar />
-      <Container fluid>
-        <Home />
-        <MeetThePod />
-        <Gallary />
-        <Projects />
-        <div className={styles.f_center}>
-          <ContactForm />
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showAnimatedBackground: false,
+    }
+    this.toggleAnimatedBackground = this.toggleAnimatedBackground.bind(this);
+  }
+
+  toggleAnimatedBackground(e) {
+    e.preventDefault();
+    this.setState({ showAnimatedBackground: !this.state.showAnimatedBackground })
+    console.log(this.state.showAnimatedBackground)
+  }
+
+  render() {
+    return (
+      <>
+        <div className={this.state.showAnimatedBackground ? styles.block : ""}>
+          <Nvbar showAnimatedBackground={this.state.showAnimatedBackground} toggleAnimatedBackground={this.toggleAnimatedBackground} />
+          <Container fluid>
+            <Home />
+
+            <div className={styles.newPageComingUp} />
+
+            <MeetThePod />
+
+            <div className={styles.newPageComingUp} />
+
+            <Gallary />
+
+            <div className={styles.newPageComingUp} />
+
+            <Projects />
+
+            <div className={styles.newPageComingUp} />
+
+
+            <div className={styles.f_center}>
+              <ContactForm />
+            </div>
+          </Container>
+          <Footer />
         </div>
-      </Container>
-      <Footer />
-    </>
-  );
+      </>
+    );
+  }
+
 }
 
 export default App;

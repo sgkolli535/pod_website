@@ -7,21 +7,19 @@ html{
 	scroll-behavior: smooth;
 }
 
-// body {
-// 	background-image: url(./images/bg_pic.png);
-// 	background-repeat: no-repeat;
-// 	background-attachment: fixed;
-// 	background-size: cover;
-//   background-color: #cccccc;
-// 	font-family: 'Ruda', sans-serif;
-// }
+body {
+	background-image: url(./images/bg_pic.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  background-color: #cccccc;
+	font-family: 'Ruda', sans-serif;
+}
 
 .f_center{
 	text-align: center;
 	width: 100%;
 }
-
-
 
 .newPageComingUp {
   content: "";
@@ -38,11 +36,6 @@ html{
 	border-radius: 1em;
 }
 
-
-
-
-
-
 .mainPage{
   background-image: url(./images/bg_pic.png);
 	background-repeat: no-repeat;
@@ -53,48 +46,29 @@ html{
   margin: 1em;
 }
 
-.block {
-	position: absolute;
-  width: 100%;
-	// width: 100vw;
-	// height: 100vh;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-
-}
-
 .block:before, .block:after {
 	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	background: linear-gradient(45deg, #efddf0, #c2c2e2, #cfc9c0,#d4c2cf, #bad8d8, #e7b9d4,
-		#ade7e9, #e4dfdc,#feffdc, #d4c1c1);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
+	position: fixed;
+	width: calc(100vw);
+	height: calc(100vh);
+	background: linear-gradient(-45deg, #efddf0, #c2c2e2, #cfc9c0,#d4c2cf, #bad8d8, #dbc4d2,
+	#ade7e9, #e4dfdc,#efddf0, #c2c2e2, #cfc9c0, #efddf0, #c2c2e2, #cfc9c0,#d4c2cf, #bad8d8, #dbc4d2,
+	#ade7e9, #e4dfdc,#efddf0, #c2c2e2, #cfc9c0, #efddf0, #c2c2e2, #cfc9c0,#d4c2cf, #bad8d8, #dbc4d2,
+	#ade7e9, #e4dfdc,#efddf0, #c2c2e2, #cfc9c0);
+	background-size: 800%;
+	animation: slide 30s linear reverse both running infinite;
 	z-index: -1;
-	animation: steam 30s linear infinite;
 }
 
-@keyframes steam {
+@keyframes slide {
 	0% {
 		background-position: 0 0;
 	}
 	50% {
-		background-position: 400% 0;
+		background-position: 100% 0;
 	}
 	100% {
 		background-position: 0 0;
 	}
 }
 
-.block:after {
-	filter: blur(50px);
-}
-
-.allContainer {
-  width: 90vw;
-}
