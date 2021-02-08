@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+// body {
+// 	background-image: url(./images/bg_pic.png);
+// 	background-repeat: no-repeat;
+// 	background-attachment: fixed;
+// 	background-size: cover;
+//   background-color: #cccccc;
+// 	font-family: 'Ruda', sans-serif;
+// }
+
+.f_center{
+	text-align: center;
+	width: 100%;
+}
+
+
+
+.newPageComingUp {
+  content: "";
+  background-image:
+  radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, rgb(240, 183, 183) 6px, rgba(255,255,255,0) 7px),
+  radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, rgb(245, 188, 245) 12px, rgba(255,255,255,0) 13px),
+  radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, rgb(144, 230, 236) 5px, rgba(255,255,255,0) 6px),
+  radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, rgb(182, 155, 142) 2px, rgba(255,255,255,0) 3px),
+  linear-gradient(to left, rgba(255,255,255,0) 1px, rgb(118, 151, 170) 2px, rgba(255,255,255,0) 3px);
+  background-repeat: repeat-x;
+  background-position: 6px 5px, 6px 9px, 6px 12px, -6px 13px, 8px 15px;
+  background-size: 12px 12px, 24px 13px, 24px 12px, 24px 24px, 24px 8px;
+	height: 30px;
+	border-radius: 1em;
+}
+
+
+
+
+
+
+.mainPage{
+  background-image: url(./images/bg_pic.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  background-color: #cccccc;
+	font-family: 'Ruda', sans-serif;
+  margin: 1em;
+}
+
+.block {
+	position: absolute;
+  width: 100%;
+	// width: 100vw;
+	// height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #efddf0, #c2c2e2, #cfc9c0,#d4c2cf, #bad8d8, #e7b9d4,
+		#ade7e9, #e4dfdc,#feffdc, #d4c1c1);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 30s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
+.allContainer {
+  width: 90vw;
+}

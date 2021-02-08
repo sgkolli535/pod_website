@@ -1,6 +1,8 @@
-function Footer(){
-  return(
-    <h1>Footer</h1>
+import styles from './Footer.module.scss';
+
+function Footer() {
+  return (
+    <h1 className={styles.outOfThisWorld}>Footer</h1>
   )
 }
 
