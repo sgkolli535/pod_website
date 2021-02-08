@@ -1,6 +1,11 @@
+import styles from './Footer.module.css';
+
 function Footer(){
   return(
-    <h1>Footer</h1>
+    <div className={styles.foot}>
+      <span className={styles.power}>Powered by</span>
+      <img src="/mlh.svg" className={styles.icon}></img>
+    </div>
   )
 }
 
