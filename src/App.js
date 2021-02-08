@@ -5,7 +5,7 @@ import { default as Projects } from './components/Projects/Projects';
 import { default as Nvbar } from './components/Nvbar/Nvbar';
 import { default as Footer } from './components/Footer/Footer';
 import { default as ContactForm } from './components/Contacts/Contacts';
-import { default as Gallary } from './components/Gallery/Gallery';
+import { default as Gallery } from './components/Gallery/Gallery';
 import { Container } from 'react-bootstrap';
 import React from 'react';
 
@@ -34,22 +34,9 @@ class App extends React.Component {
             <div className={styles.break} />
             <div className={styles.beginning} />
             <Home />
-
-
-
             <MeetThePod />
-
-
-
-            <Gallary />
-
-
-
+            <Gallery />
             <Projects />
-
-
-
-
             <div className={styles.f_center}>
               <ContactForm />
             </div>
