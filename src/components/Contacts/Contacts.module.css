@@ -1,6 +1,6 @@
 .frm{
   width: 60%;
-  margin: 5rem auto;
+  margin: 10rem auto;
 }
 
 .head{
@@ -11,3 +11,39 @@
   font-size: xx-large;
   font-weight: bold;
 }
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.links{
+  width: 33.33%;
+  background-color: azure;
+  font-size: xx-large;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 2rem 0;
+  text-decoration: none !important;
+}
+
+@media (max-width: 550px) {
+  .links{
+    width: fit-content;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .onSmall{
+    display: none;
+  }
+}
+

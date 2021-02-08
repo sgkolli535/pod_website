@@ -16,7 +16,7 @@
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
   min-height: 200px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border-radius: 5px;
 }
 
@@ -28,15 +28,15 @@
   border-radius: 5px;
 }
 
-/*Target the classes maintain by the cdn for flickity*/
-.flickity-viewport{
-  height: 100%;
-}
-
 .head{
 	font-family: 'Ruda', sans-serif;
 	text-align: center;
 	color: #1A46E3;
   font-size: xx-large;
   font-weight: bold;
+}
+
+/*Target the classes maintain by the cdn for flickity*/
+.flickity-viewport{
+  height: 100%;
 }
