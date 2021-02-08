@@ -6,12 +6,12 @@ import * as profile_data from '../../_data/teams.json';
 function MeetThePod() {
 
   const podList = profile_data.default.map((member,i) => {
-    return <PodCard key={i} title={member.title} description={member.name}/>
+    return <PodCard key={i} name={member.name} country={member.country} school={member.school} links={member.links} image={member.image}/>
   });
 
   return (
     <Container id="meet" className={styles.team}>
-      <h1 style={{fontWeight: 'bold'}}>Meet the Pod</h1>
+      <span className={styles.head}>Meet the Pod</span>
       <div className={styles.team_flex}>
         {podList};
       </div>

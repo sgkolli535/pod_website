@@ -9,6 +9,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2rem auto;
+  margin: 3rem auto;
   justify-content: center;
+}
+
+.head{
+	font-family: 'Ruda', sans-serif;
+	text-align: center;
+	color: #1A46E3;
+  font-size: xx-large;
+  font-weight: bold;
 }
