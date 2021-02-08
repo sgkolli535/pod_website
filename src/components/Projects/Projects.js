@@ -7,7 +7,7 @@ function Projects() {
   const project_list = project_data.default.map((proj, i)=>{
     return (
       <div key ={i} className={styles.carousel_cell}>
-        <ProjectCard title={proj.title} description={proj.description} tech={proj}/>
+        <ProjectCard title={proj.title} description={proj.description} tech={proj.tech} links={proj.links} image={proj.image}/>
       </div>);
   });
 

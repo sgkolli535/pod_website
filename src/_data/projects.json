@@ -6,7 +6,8 @@
     "links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "image":"\\_project\\demo.jpg"
   },
   {
     "title": "Project 2",
@@ -15,7 +16,8 @@
     "links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "image":"\\_project\\demo.jpg"
   },
   {
     "title": "Project 3",
@@ -24,7 +26,8 @@
     "links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "image":"\\_project\\demo.jpg"
   },
   {
     "title": "Project 4",
@@ -33,7 +36,8 @@
     "links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "image":"\\_project\\demo.jpg"
   },
   {
     "title": "Project 5",
@@ -42,7 +46,8 @@
     "links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "image":"\\_project\\demo.jpg"
   },
   {
     "title": "Project 6",
@@ -51,6 +56,7 @@
     "links": {
       "github": "",
       "demo": ""
-    }
+    },
+    "image":"\\_project\\demo.jpg"
   }
 ]
