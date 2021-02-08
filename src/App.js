@@ -29,28 +29,32 @@ class App extends React.Component {
       <>
         <div className={this.state.showAnimatedBackground ? styles.block : ""}>
           <Nvbar showAnimatedBackground={this.state.showAnimatedBackground} toggleAnimatedBackground={this.toggleAnimatedBackground} />
+
           <Container fluid>
+            <div className={styles.break} />
+            <div className={styles.beginning} />
             <Home />
 
-            <div className={styles.newPageComingUp} />
+
 
             <MeetThePod />
 
-            <div className={styles.newPageComingUp} />
+
 
             <Gallary />
 
-            <div className={styles.newPageComingUp} />
+
 
             <Projects />
 
-            <div className={styles.newPageComingUp} />
+
 
 
             <div className={styles.f_center}>
               <ContactForm />
             </div>
           </Container>
+          <div className={styles.end} />
           <Footer />
         </div>
       </>

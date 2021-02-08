@@ -21,20 +21,32 @@ body {
 	width: 100%;
 }
 
-.newPageComingUp {
+.break {
+	height: 40px;
+}
+
+.beginning, .end {
   content: "";
   background-image:
-  radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, rgb(240, 183, 183) 6px, rgba(255,255,255,0) 7px),
-  radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, rgb(245, 188, 245) 12px, rgba(255,255,255,0) 13px),
-  radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, rgb(144, 230, 236) 5px, rgba(255,255,255,0) 6px),
-  radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, rgb(182, 155, 142) 2px, rgba(255,255,255,0) 3px),
-  linear-gradient(to left, rgba(255,255,255,0) 1px, rgb(118, 151, 170) 2px, rgba(255,255,255,0) 3px);
+  radial-gradient(circle at 6px 0, rgba(255,255,255,0) 5px, rgb(198, 209, 97) 6px, rgba(255,255,255,0) 7px),
+  radial-gradient(circle at 12px 0, rgba(255,255,255,0) 11px, rgb(153, 0, 0) 12px, rgba(255,255,255,0) 13px),
+  radial-gradient(circle at 12px 0, rgba(255,255,255,0) 4px, rgb(0, 0, 0) 5px, rgba(255,255,255,0) 6px),
+  radial-gradient(circle at 12px 12px, rgba(255,255,255,0) 1px, rgb(16, 78, 0) 2px, rgba(255,255,255,0) 3px),
+  linear-gradient(to left, rgba(255,255,255,0) 1px, rgb(0, 162, 255) 2px, rgba(255,255,255,0) 3px);
   background-repeat: repeat-x;
   background-position: 6px 5px, 6px 9px, 6px 12px, -6px 13px, 8px 15px;
   background-size: 12px 12px, 24px 13px, 24px 12px, 24px 24px, 24px 8px;
 	height: 30px;
 	border-radius: 1em;
+	width: 100vw;
+	margin-left: -15px;
 }
+.end {
+	transform: scaleY(-1);
+	margin-bottom: -5px;
+	margin-left: 0px;
+}
+
 
 .mainPage{
   background-image: url(./images/bg_pic.png);
