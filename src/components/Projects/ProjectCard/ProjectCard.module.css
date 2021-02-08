@@ -18,3 +18,17 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+.projDes {
+  margin: 1rem;
+}
+
+.des{
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tech_stk {
+  margin: 3px;
+}
