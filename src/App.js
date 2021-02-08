@@ -5,6 +5,7 @@ import { default as Projects } from './components/Projects/Projects';
 import { default as Nvbar } from './components/Nvbar/Nvbar';
 import { default as Footer } from './components/Footer/Footer';
 import {default as ContactForm} from './components/Contacts/Contacts';
+import {default as Gallary} from './components/Gallery/Gallery';
 import {Container} from 'react-bootstrap';
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
       <Container fluid>
           <Home />
           <MeetThePod />
+          <Gallary />
           <Projects />
           <div className={styles.f_center}>
             <ContactForm />
           </div>
-          <Footer />
       </Container>
+      <Footer />
     </>
   );
 }
