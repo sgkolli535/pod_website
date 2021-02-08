@@ -6,8 +6,10 @@ import { default as Nvbar } from './components/Nvbar/Nvbar';
 import { default as Footer } from './components/Footer/Footer';
 import { default as ContactForm } from './components/Contacts/Contacts';
 import { default as Gallery } from './components/Gallery/Gallery';
+import { default as Snow } from './components/snow.js';
 import { Container } from 'react-bootstrap';
 import React from 'react';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -29,10 +31,10 @@ class App extends React.Component {
       <>
         <div className={this.state.showAnimatedBackground ? styles.block : ""}>
           <Nvbar showAnimatedBackground={this.state.showAnimatedBackground} toggleAnimatedBackground={this.toggleAnimatedBackground} />
-
           <Container fluid>
             <div className={styles.break} />
             <div className={styles.beginning} />
+            <Snow/>
             <Home />
             <MeetThePod />
             <Gallery />
