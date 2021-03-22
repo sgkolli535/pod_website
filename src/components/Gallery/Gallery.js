@@ -11,6 +11,11 @@ function Gallery() {
           className="d-block w-100"
           src={item.imgLink}
           alt={item.title}
+          style={{
+            height: '100vh',
+            width: '100%',
+            objectFit: 'contain'
+          }}
         />
       </Carousel.Item>
     )
