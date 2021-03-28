@@ -1,7 +1,7 @@
 http://pod-website-5.herokuapp.com/
 https://pod-website.vercel.app/
 
-# Getting Started with Create React App
+# Pod Website for MLH Fellowship Explorer Pod 2.1.2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
